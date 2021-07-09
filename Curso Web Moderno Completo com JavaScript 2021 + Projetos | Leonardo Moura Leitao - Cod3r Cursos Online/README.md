@@ -43,4 +43,6 @@
 
  O conceito de um algoritmo foi formalizado em **1936** pela **Máquina de Turing** de **Alan Turing** e pelo **cálculo lambda** de Alonzo Church, que formaram as primeiras fundações da Ciência da computação.
 
- **Um programa** de computador **é** essencialmente **um algoritmo** que diz ao computador os passos específicos e em que ordem eles devem ser executados
+ **Um programa** de computador **é** essencialmente **um algoritmo** que diz ao computador aos passos específicos e em que ordem eles devem ser executados
+
+ [Fonte: Algoritmo – Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Algoritmo)
