@@ -277,6 +277,8 @@ Todos os operadores aritméticos são binários. Cinco operadores representam as
 
 ## 2.2. Visão Geral de Estruturas de Dados
 
+![Mapa Mental Estrutura de Dados](./imagens/EstruturasDeDados.png)
+
 Uma estrutura de dados é uma coleção tanto de valores (e seus relacionamentos) quanto de operações (sobre os valores e estruturas decorrentes). É uma implementação concreta de um tipo abstrato de dado (TAD) ou um tipo de dado (TD) básico ou primitivo. Assim, o termo ED pode ser considerado sinônimo de TD, se considerado TAD um hipônimo de TD, isto é, se um TAD for um TD.
 
 ### 2.2.1 Principais Estruturas de Dados (clássicas)
