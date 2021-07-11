@@ -78,6 +78,8 @@ se (condição) então
 fimse
 ~~~
 
+---
+
 **Estrutura de Seleção Composta**: O desvio condicional composto tem por finalidade tomar decisões de acordo com o resultado de uma condição (teste lógico), da mesma forma que o desvio condicional simples que estudamos na aula anterior. Porém, enquanto o condicional simples somente executa instruções quando o teste condicional retorna verdadeiro, o condicional composto permite criar dois blocos de código.
 
 ~~~
@@ -87,6 +89,8 @@ senão
     Instruções caso condição retorne falso
 fimse
 ~~~
+
+---
 
 **Estrutura de Seleção Encadeada**:Existem situações nas quais é necessário verificar condições de teste sucessivas, onde uma ação será executada caso um conjunto anterior de ações seja satisfeito. Podemos usar para resolver esse tipo de problemas uma estrutura denominada Desvio Condicional Aninhado, que nada mais é do que o encadeamento de estruturas de decisão compostas em um algoritmo. Também chamamos a esse tipo de estrutura de Desvio Condicional Encadeado, por este motivo.
 
@@ -101,6 +105,8 @@ senão
    fimse
 fimse
 ~~~
+
+---
 
 **Estrutura de Seleção múltipla escolha**:É utilizado para que seja possível escolher uma opção dentre várias existentes, eliminando a necessidade de se usar diversos Se..Então encadeados.
 
@@ -135,6 +141,8 @@ Repita
 Ate (condição)
 ~~~
 
+---
+
 **Estrutura de Repetição com variável de controle**:A estrutura "para" (ou "repetição com variável de controle") é uma estrutura de repetição que designa uma variável de controle para cada iteração do bloco, e uma operação de passo a cada iteração. Sua estrutura básica é a seguinte:
 
 ~~~
@@ -142,6 +150,8 @@ Para (V) De (vi) Até (vf) Passo (p) Faça
     (bloco de código)
 Fim Para
 ~~~
+
+---
 
 **Estrutura de Iteração de coleção**:A estrutura "para cada" é usada para iterar itens de uma coleção, sendo uma especialização da estrutura "para". Menos flexível que a estrutura "para", esta estrutura torna implícita a atribuição inicial e o incremento do passo, e determina que a condição de parada é somente a situação no qual todos os elementos do conjunto já foram iterados. Sua estrutura básica é:
 
@@ -208,6 +218,8 @@ C <- A e B
 C = Falso
 ~~~
 
+---
+
 **Operador Lógico OU**: O operador lógico OU (OR) somente retorna falso se todas as condições de entrada forem falsas.
 
 | Condição A | Condição B | Resultado  |
@@ -225,6 +237,8 @@ B <- Verdadeiro
 C <- A ou B
 C = Verdadeiro
 ~~~
+
+---
 
 **Operador Lógico NÃO**: O operador lógico NÃO (NOT) inverte a condição de entrada: verdadeiro se torna falso, e falso se torna verdadeiro.
 
@@ -264,3 +278,55 @@ Todos os operadores aritméticos são binários. Cinco operadores representam as
 ## 2.2. Visão Geral de Estruturas de Dados
 
 Uma estrutura de dados é uma coleção tanto de valores (e seus relacionamentos) quanto de operações (sobre os valores e estruturas decorrentes). É uma implementação concreta de um tipo abstrato de dado (TAD) ou um tipo de dado (TD) básico ou primitivo. Assim, o termo ED pode ser considerado sinônimo de TD, se considerado TAD um hipônimo de TD, isto é, se um TAD for um TD.
+
+### 2.2.1 Principais Estruturas de Dados (clássicas)
+
+**Vetor**: Essa estrutura de dados também é conhecida como variável indexada, vetor (para Vetores unidimensionais) e matriz (para Vetores bidimensionais).
+
+Os Vetores mantêm uma série de elementos de dados, geralmente do mesmo tamanho e tipo de dados.
+
+Os Vetores podem ser considerados como as estruturas de dados mais simples. Têm a vantagem de que os seus elementos são acessíveis de forma rápida mas têm uma notável limitação: são de tamanho fixo, mas podem ser incrementados ou diminuídos com determinados algoritmos, geralmente envolvendo a cópia de elementos de um arranjo para outro e reiniciar o original com a nova dimensão. Os vetores podem ser implementados desta forma.
+
+---
+
+**Lista**: uma lista ou sequência é uma estrutura de dados abstrata que implementa uma coleção ordenada de valores, onde o mesmo valor pode ocorrer mais de uma vez.
+
+Uma instância de uma lista é uma representação computacional do conceito matemático de uma sequência finita, que é, uma tupla.
+
+Cada instância de um valor na lista normalmente é chamado de um item, entrada ou elemento da lista. Se o mesmo valor ocorrer várias vezes, cada ocorrência é considerada um item distinto.
+
+---
+
+**Pilha**:uma pilha (stack em inglês) é um tipo abstrato de dado e estrutura de dados baseado no princípio de Last In First Out (LIFO), ou seja "o último que entra é o primeiro que sai" caracterizando um empilhamento de dados
+
+Pilhas são fundamentalmente compostas por duas operações: push (empilhar) que adiciona um elemento no topo da pilha e pop (desempilhar) que remove o último elemento adicionado.
+
+---
+
+**Fila ou FIFO**: algoritmo de fila simples, FIFO (do inglês: first in, first out , "primeiro a entrar, primeiro a sair", "PEPS") ou FCFS (do inglês: first come, first served , "primeiro a chegar, primeiro a ser servido") é um algoritmo de escalonamento para estruturas de dados do tipo fila
+
+Apresenta o seguinte critério: o primeiro elemento a ser retirado é o primeiro que tiver sido inserido, é um algoritmo de escalonamento não preemptivo que entrega a CPU os processos pela ordem de chegada. Ele executa o processo como um todo do inicio ao fim não interrompendo o processo executado até ser finalizado, então quando um novo processo chega e existe um ainda em execução ele vai para uma fila de espera.
+
+O algoritmo FIFO não garante um tempo de resposta rápido pois é extremamente sensível a ordem de chegada de cada processo e dos antecessores (se existirem) e se processos que tendem a demorar mais tempo chegarem primeiro o tempo médio de espera e o turnaround acabam sendo aumentados
+
+É vantajoso por ser o mais simples entre os processos de escalonamento; e todos os processos tendem a serem atendidos. Dentre as desvantagens estão: muito sensível a ordem de chegada
+
+---
+
+**Árvore**:é uma das mais importantes estruturas de dados não lineares. Herda as características das topologia em árvore. Conceptualmente diferente das listas, em que os dados se encontram numa sequência, nas árvores os dados estão dispostos de forma hierárquica, seus elementos se encontram "acima" ou "abaixo" de outros elementos da árvore.
+
+Há inúmeros problemas no mundo real que podem ser modelados e resolvidos através das árvores. Estruturas de pastas de um sistema operacional, interfaces gráficas, bancos de dados e sites da Internet são exemplos de aplicações de árvores.
+
+Uma árvore é formada por um conjunto de elementos que armazenam informações chamados nodos ou nós. Toda a árvore possui o elemento chamado raiz, que possui ligações para outros elementos denominados ramos ou filhos. Estes ramos podem estar ligados a outros elementos que também podem possuir outros ramos. O elemento que não possui ramos é conhecido como nó folha, nó terminal ou nó externo.
+
+[Fonte: Estrutura de dados – Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Estrutura_de_dados)
+
+[Fonte: Arranjo (computação) - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Arranjo_(computa%C3%A7%C3%A3o))
+
+[Fonte: Lista - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Lista)
+
+[Fonte: Pilha (informática) - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Pilha_(inform%C3%A1tica))
+
+[Fonte: FIFO - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/FIFO)
+
+[Fonte: Árvore (estrutura de dados) - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/%C3%81rvore_(estrutura_de_dados))
