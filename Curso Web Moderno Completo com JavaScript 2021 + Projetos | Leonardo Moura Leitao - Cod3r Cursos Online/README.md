@@ -33,6 +33,9 @@
  # 2. Javascript: Fundamentos
 
  ## 2.1. Visão Geral de Algoritmo
+
+![Mapa mental algoritmo](./imagens/Algoritmo.png)
+
  Um algoritmo é uma **sequência finita de ações** executáveis que visam obter uma solução para um determinado tipo de problema.
 
  > "algoritmos são procedimentos precisos, não ambíguos, padronizados, eficientes e corretos"
@@ -63,7 +66,7 @@ Ação4;
 Ação5;
 ~~~
 
-#### 2.1.1.2. Estrutura de seleção
+#### 2.1.1.2. Estruturas de seleção
 
 **Estrutura de seleção** (expressão condicional ou ainda estrutura condicional) é, uma estrutura de desvio do fluxo de controle presente em linguagens de programação que realiza diferentes computações ou ações dependendo se a seleção (ou condição) é verdadeira ou falsa
 
@@ -114,7 +117,7 @@ comandos-padrão
 fimescolha
 ~~~
 
-#### 2.1.1.3. Estrutura de Repetição
+#### 2.1.1.3. Estruturas de Repetição
 
 **Estrutura de Repetição pré-testada**: A estrutura "enquanto" (também chamada "repetição pré-testada") é a mais difundida estrutura de repetição, e sua estrutura básica é a seguinte:
 
