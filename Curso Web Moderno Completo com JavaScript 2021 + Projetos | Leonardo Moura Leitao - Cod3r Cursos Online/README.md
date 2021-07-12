@@ -332,3 +332,24 @@ Uma árvore é formada por um conjunto de elementos que armazenam informações 
 [Fonte: FIFO - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/FIFO)
 
 [Fonte: Árvore (estrutura de dados) - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/%C3%81rvore_(estrutura_de_dados))
+
+## 2.3 Organização Básica de um Código JS
+
+![Mapa Mental](./imagens/OrganizaçãoBásicaDeUmCódigoJS.png)
+
+Um bloco de código é a estrutura mais elementar de qualquer linguagem de programação. 
+
+O bloco de código pode conter uma ou mais sentenças de código, como também conter outros blocos de código.
+
+No JavaScript as sentenças de código podem ter uma ou mais linhas que podem ou não serem terminadas com ponto e virgula.
+
+~~~javaScript
+console.log(
+    "Uma sentença de código pode ter multiplas linhas")
+
+    console.log("podendo ou não terminar com \" ; \"");
+
+    {
+        console.log("Bloco Bloco de código é delimitado por chaves \" {} \"")
+    }
+~~~
