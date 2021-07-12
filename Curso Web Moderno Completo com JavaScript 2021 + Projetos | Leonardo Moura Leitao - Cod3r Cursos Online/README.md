@@ -353,3 +353,22 @@ console.log(
         console.log("Bloco Bloco de código é delimitado por chaves \" {} \"")
     }
 ~~~
+
+## 2.4 Comentários de Código
+
+![Mapa mental](./imagens/ComentáriosdeCódigo.png)
+
+O comentário é uma ferramenta excelente para orientar um programador no entendimento do código, mas o uso errado pode ser prejudicial. Algumas dicas para o uso e boas práticas.
+
+* Evite comentario obvios
+* De preferencia código legivel
+
+~~~JavaScipt
+// Comentário de uma linha
+
+/**
+ * Comentário de Multiplas linhas
+ * Comentário de Multiplas linhas
+ * Comentário de Multiplas linhas
+ */
+~~~
