@@ -281,7 +281,7 @@ Todos os operadores aritméticos são binários. Cinco operadores representam as
 
 Uma estrutura de dados é uma coleção tanto de valores (e seus relacionamentos) quanto de operações (sobre os valores e estruturas decorrentes). É uma implementação concreta de um tipo abstrato de dado (TAD) ou um tipo de dado (TD) básico ou primitivo. Assim, o termo ED pode ser considerado sinônimo de TD, se considerado TAD um hipônimo de TD, isto é, se um TAD for um TD.
 
-### 2.2.1 Principais Estruturas de Dados (clássicas)
+### 2.2.1. Principais Estruturas de Dados (clássicas)
 
 **Vetor**: Essa estrutura de dados também é conhecida como variável indexada, vetor (para Vetores unidimensionais) e matriz (para Vetores bidimensionais).
 
@@ -333,7 +333,7 @@ Uma árvore é formada por um conjunto de elementos que armazenam informações 
 
 [Fonte: Árvore (estrutura de dados) - Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/%C3%81rvore_(estrutura_de_dados))
 
-## 2.3 Organização Básica de um Código JS
+## 2.3. Organização Básica de um Código JS
 
 ![Mapa Mental](./imagens/OrganizaçãoBásicaDeUmCódigoJS.png)
 
@@ -354,7 +354,7 @@ console.log(
     }
 ~~~
 
-## 2.4 Comentários de Código
+## 2.4. Comentários de Código
 
 ![Mapa mental](./imagens/ComentáriosdeCódigo.png)
 
@@ -372,3 +372,47 @@ O comentário é uma ferramenta excelente para orientar um programador no entend
  * Comentário de Multiplas linhas
  */
 ~~~
+
+## 2.5. O Básico de Var, Let e Const
+
+![Mapa](./imagens/Variáveis.png)
+
+Em JavaScript, toda variável é **“elevada/içada”** (*hoisting*) até o topo do seu contexto de execução. Esse mecanismo move as variáveis para o topo do seu escopo antes da execução do código.
+
+### 2.5.1. var
+
+No caso da palavra-chave `var`, além da variável ser içada (hoisting) ela é automaticamente inicializada com o valor undefined (caso não seja atribuído nenhum outro valor).
+
+Às vezes, queremos declarar variáveis que serão utilizadas apenas dentro de um pequeno trecho do nosso código. Ter que lidar com o escopo de função das variáveis declaradas com var (escopo abrangente) pode confundir a cabeça até de programadores mais experientes.
+
+Sabendo das "complicações" que as variáveis declaradas com var podem causar, podemos evitá-las com o uso do `let`
+
+### 2.5.2. let
+
+Foi pensando em trazer o escopo de bloco (tão conhecido em outras linguagens) que o ECMAScript 6 destinou-se a disponibilizar essa mesma flexibilidade (e uniformidade) para a linguagem.
+
+Portanto, podemos usar tranquilamente o let, pois o escopo de bloco estará garantido.
+
+### 2.5.3. const
+
+É importante utilizar `const` para declarar nossas variáveis, porque assim conseguimos um comportamento mais previsível, já que o valor que elas recebem não podem ser alterado.
+
+---
+
+Graças ao hoisting, variáveis declaradas com a palavra-chave `var` podem ser utilizadas mesmo antes de sua declaração.
+
+Por outro lado, as variáveis criadas com `let` só podem ser utilizadas após sua declaração, pois, apesar de serem elevadas, elas não são inicializadas.
+
+Além das variáveis declaradas com `var` temos a possibilidade de usar constantes por meio da palavra-chave `const` ou utilizar variáveis com escopo de bloco através da `let`.
+
+|                          | Const | Let | Var |
+|--------------------------|-------|-----|-----|
+| **Escopo Global**        | NÃO   | NÃO | SIM |
+| **Escopo de Função**     | SIM   | SIM | SIM |
+| **Escopo de Bloco**      | SIM   | SIM | NÃO |
+| **Pode ser reatribuido** | NÃO   | SIM | SIM |
+
+
+[Fonte: Entenda a diferença entre var, let e const no JavaScript - Otávio Prado - Alura](https://www.alura.com.br/artigos/entenda-diferenca-entre-var-let-e-const-no-javascript?gclid=Cj0KCQjw0K-HBhDDARIsAFJ6UGivYiFYbhpzDHg-inxzCdI4-M81bIob6dqMfFhzqY7LCvXv5OpaCGEaAmDzEALw_wcB)
+
+[Fonte: Escopo e Hoisting, como funciona isso no JavaScript? - Cristofer Souza - Medium](https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448)
