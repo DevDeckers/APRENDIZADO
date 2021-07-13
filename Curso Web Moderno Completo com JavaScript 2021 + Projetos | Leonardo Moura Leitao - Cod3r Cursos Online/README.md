@@ -497,3 +497,56 @@ Depois da conversão intencional da variável pode ser feita a soma das variáve
 
 [Fonte: Diferença entre uma linguagem de programação estática e dinâmica? - Ramos da Informática](https://www.ramosdainformatica.com.br/programacao/qual-diferenca-entre-uma-linguagem-de-programacao-estatica-e-dinamica/)
 
+## 2.7. Tipos em JavaScript: Number
+
+## 2.7.1. Método `toString`
+
+O método `toString ()` converte um número em uma string.
+
+**parametros**
+
+| Parametro | Descrição                                                                                   |
+|-----------|---------------------------------------------------------------------------------------------|
+| radix     | O parametro `randix` é um parametro **opicional** que muda a representação da base numerica |
+
+~~~JavaScript
+var variavel = 96;
+var variavelString = variavel.toString();
+var variavelBinario = variavel.toString(2);
+var VariavelOctal = variavel.toString(8);
+var VariavelHexadecimal = variavel.toString(16);
+
+console.log("Variavel Inicial: "+ variavel + " Tipo: " + typeof variavel)
+console.log("Variavel toString: " + variavelString + " Tipo: " + typeof variavelString)
+console.log("Variavel toString em Binario: " + variavelBinario + " Tipo: " + typeof variavelBinario)
+console.log("Variavel toString em Octal: " + VariavelOctal + " Tipo: " + typeof VariavelOctal)
+console.log("Variavel toString em Hexadecimal: " + VariavelHexadecimal + " Tipo: " + typeof VariavelHexadecimal)
+~~~
+
+**OutPut**
+
+~~~
+Variavel Inicial: 128 Tipo: number
+Variavel toString: 128 Tipo: string
+Variavel toString em Binario: 10000000 Tipo: string
+Variavel toString em Octal: 200 Tipo: string
+Variavel toString em Hexadecimal: 80 Tipo: string
+~~~
+
+## 2.7.2. Método `toFixed()`
+
+O método `toFixed ()` converte um número em uma string, arredondando para um número especificado de casa decimais.
+
+**Exemplo**
+
+~~~JavaScript
+const pi = 3.14159265358979323846
+
+console.log(pi.toFixed(2))
+~~~
+
+**Output**
+
+~~~
+3.14
+~~~
