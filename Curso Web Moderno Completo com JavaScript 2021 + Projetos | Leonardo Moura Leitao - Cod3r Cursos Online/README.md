@@ -417,16 +417,83 @@ Além das variáveis declaradas com `var` temos a possibilidade de usar constant
 
 [Fonte: Escopo e Hoisting, como funciona isso no JavaScript? - Cristofer Souza - Medium](https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448)
 
-## 2.6. Tipagem Fraca
+## 2.6. Tipagem
 
-Uma linguagem de tipagem dinâmica permite maior maleabilidade no código permitindo a mudança dos tipos da variável durante o processo de execução, porem torna a linguagem um pouco mais instável podendo ocasionar bugs.
+![Mapa](./imagens/Tipagem.png)
+
+### 2.6.1. Tipagem estática
+
+A tipagem deve estar explicitado qual o tipo de dado para variável e não pode ser alterado, como no caso da linguagem c.
+
+~~~CPP
+int velocity = 4;
+~~~
+
+Neste caso você não pode alterar o tipo da variável, você pode criar uma nova variável com um novo tipo de dado e fazer casting para o novo tipo, mas não fazer a variável `velocity` receber outro tipo de dado que não seja o dela.
+
+~~~cpp
+int velocity = 4;
+float newVelocity = (float) velocity;
+~~~
+---
+
+### 2.6.2. Tipagem dinâmica
+
+Este tipo de tipagem pode ser inferida pela linguagem sem ser escrita de forma explicita o tipo de dado, por exemplo a linguagem php.
+
+~~~PHP
+$users = 5;
+~~~
+
+O php já trata a variável com o tipo inteiro sem precisar estar explicito o tipo dela. É possível além disso alterar o valor da variável para outro tipo.
+
+~~~Php
+$users = 5;
+$users = 'cinco';
+~~~
+
+---
+
+### 2.6.3. Tipagem fraca
+
+Essa se trata quando o tipo do dado não é bem definido, a linguagem pode alterar o tipo por alguma ação, sem intervenção direta do programador, como é o caso da linguagem javascript.
 
 ~~~JavaScript
-let variavel = '3.1415'
-console.log(variavel)
-console.log(typeof variavel)
-
-variavel = 3.1415
-console.log(variavel)
-console.log(typeof variavel)
+const numberOne = "5"
+const numberTwo = 5
+console.log(numberOne + numberTwo)
+// 55
 ~~~
+
+Neste caso mesmo o dado numberTwo sendo number ele é convertido para string para que possa fazer a concatenação com a string.
+
+---
+
+### 2.6.4 Tipagem forte
+
+Quando na linguagem os tipos estão bem definidos, sendo necessário a alteração do programador para ser convertido a algum tipo de dado especifico, como é o caso da linguagem python
+
+~~~python
+number_one = "5"
+number_two = 5
+print(number_one + number_two)
+# Traceback (most recent call last):
+#  File "<stdin>", line 1, in <module>
+# TypeError: can only concatenate str (not "int") to str
+~~~
+
+Como os tipos são bem definidos e a soma entre string e inteiros não é permitida, python lança o erro de que não pode fazer a concatenação desses dados, pedindo que o programador explicite a conversão dos dados. Por exemplo.
+
+~~~python
+number_one = "5"
+number_two = 5
+print(int(number_one) + number_two)
+# 10
+~~~
+
+Depois da conversão intencional da variável pode ser feita a soma das variáveis sem erro.
+
+[Fonte: Tipagem fraca, forte, dinâmica e estática - DEV Community](https://dev.to/joaoava/tipagem-fraca-forte-dinamica-e-estatica-g8k)
+
+[Fonte: Diferença entre uma linguagem de programação estática e dinâmica? - Ramos da Informática](https://www.ramosdainformatica.com.br/programacao/qual-diferenca-entre-uma-linguagem-de-programacao-estatica-e-dinamica/)
+
