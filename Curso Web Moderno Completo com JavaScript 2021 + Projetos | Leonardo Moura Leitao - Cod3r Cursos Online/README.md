@@ -391,7 +391,7 @@ Sabendo das "complicações" que as variáveis declaradas com var podem causar, 
 
 Foi pensando em trazer o escopo de bloco (tão conhecido em outras linguagens) que o ECMAScript 6 destinou-se a disponibilizar essa mesma flexibilidade (e uniformidade) para a linguagem.
 
-Portanto, podemos usar tranquilamente o let, pois o escopo de bloco estará garantido.
+Portanto, podemos usar tranquilamente o `let`, pois o escopo de bloco estará garantido.
 
 ### 2.5.3. const
 
@@ -416,3 +416,17 @@ Além das variáveis declaradas com `var` temos a possibilidade de usar constant
 [Fonte: Entenda a diferença entre var, let e const no JavaScript - Otávio Prado - Alura](https://www.alura.com.br/artigos/entenda-diferenca-entre-var-let-e-const-no-javascript?gclid=Cj0KCQjw0K-HBhDDARIsAFJ6UGivYiFYbhpzDHg-inxzCdI4-M81bIob6dqMfFhzqY7LCvXv5OpaCGEaAmDzEALw_wcB)
 
 [Fonte: Escopo e Hoisting, como funciona isso no JavaScript? - Cristofer Souza - Medium](https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448)
+
+## 2.6. Tipagem Fraca
+
+Uma linguagem de tipagem dinâmica permite maior maleabilidade no código permitindo a mudança dos tipos da variável durante o processo de execução, porem torna a linguagem um pouco mais instável podendo ocasionar bugs.
+
+~~~JavaScript
+let variavel = '3.1415'
+console.log(variavel)
+console.log(typeof variavel)
+
+variavel = 3.1415
+console.log(variavel)
+console.log(typeof variavel)
+~~~
