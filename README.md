@@ -5,6 +5,7 @@ Portanto a qualidade do código aqui apresentado **não condiz com a realidade d
  - Codigos de exemplos com notação do conteudo apresentado.
  - Exercicios de fixação respondidos.
  - Projetos simples.
+ - Anotações e pequisas sobre os assuntos abordados
 
 Caso queira verificar meu projetos para validar minha real capacidade de desenvolvimento favor verificar meus repositorios.
 
